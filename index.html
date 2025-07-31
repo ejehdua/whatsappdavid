@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שיחת וואטסאפ פיקטיבית</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="whatsapp-container">
+        <div class="chat-header">
+            <img src="/family.png" alt="תמונת פרופיל קבוצתית" class="profile-pic">
+            <h2>משפחת ישי</h2>
+        </div>
+        <div class="chat-area" id="chat-area">
+            <!-- הודעות יטענו כאן -->
+        </div>
+        <div class="add-message-prompt" id="add-message-prompt">
+            לחצו עלי להוספת הודעה
+        </div>
+    </div>
+
+    <!-- Modal for adding/editing messages -->
+    <div class="modal-overlay" id="message-modal">
+        <div class="modal-content">
+            <h3>הוספת הודעה חדשה</h3>
+            <textarea id="message-input" placeholder="כתבו את ההודעה כאן..."></textarea>
+            <div class="sender-select">
+                <label for="sender-dropdown">שולח:</label>
+                <select id="sender-dropdown" name="sender">
+                    <option value="אני - אבא ישי">אני - אבא ישי</option>
+                    <option value="אליאב">אליאב</option>
+                    <option value="אבינדב">אבינדב</option>
+                    <option value="שמעא">שמעא</option>
+                    <option value="נתנאל">נתנאל</option>
+                    <option value="רדאי">רדאי</option>
+                    <option value="אֹצם">אֹצם</option>
+                    <option value="צֶר">צֶר</option>
+                    <option value="דוד">דוד</option>
+                </select>
+            </div>
+            <button id="save-message-button">שמירה</button>
+            <button id="cancel-button">ביטול</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
